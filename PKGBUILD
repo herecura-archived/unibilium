@@ -6,8 +6,8 @@ arch=('x86_64' 'i686')
 url="https://github.com/mauke/unibilium/"
 license=('LGPLv3')
 depends=()
-source=("https://github.com/mauke/unibilium/archive/v$pkgver.tar.gz")
-md5sums=('3cd508847eab55c4aa8466e9ff1e7080')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/mauke/unibilium/archive/v$pkgver.tar.gz")
+sha256sums=('dab107959850caef5e3bd4a1363d139df32c6d5cdc450f97e0db423bb6341b6e')
 
 build() {
 	cd "${pkgname}-${pkgver}"
